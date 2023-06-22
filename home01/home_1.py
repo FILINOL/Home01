@@ -1,9 +1,5 @@
-number = int(input("Введите трехзначное число: "))
-number1 = 0
+a = int(input("Введите трехзначное число: "))
 
-while number > 0:
-    sum = number % 10
-    number1 += sum
-    number //= 10
+c = a % 10 + a // 100 + a // 10 % 10
 
-print(f"Сумма цифр равна {number1}")
+print(f"Сумма цифр равна {c}")

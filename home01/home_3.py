@@ -1,13 +1,7 @@
-def lucky_ticket(ticket_number):
-    number = [int(d) for d in str(ticket_number)]
-    if len(number) != 6:
-        return False
-    left_sum = sum(number[:3])
-    right_sum = sum(number[3:])
-    return left_sum == right_sum
-
-ticket_number = input("Введите номер билета: ")
-if lucky_ticket(ticket_number):
-    print("Счастливый билет!")
+a = input ("Введите номер билета: ")
+b = int(a[0]) + int(a[1]) + int(a[2])
+c = int(a[3]) + int(a[4]) + int(a[5])
+if b == c:
+    print ("Номер билета счастливый!")
 else:
-    print("Обычный билет")
+    print("ННомер билета не счастливый!")
